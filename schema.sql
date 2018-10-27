@@ -2,8 +2,6 @@ CREATE database youtube;
 \connect youtube
 CREATE SCHEMA entities;
 
-CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE;
-
 CREATE TABLE youtube.entities.chan_stats
 (
     time timestamptz DEFAULT now() NOT NULL,
